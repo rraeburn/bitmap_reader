@@ -24,13 +24,15 @@ module.exports = function(grunt) {
     jscs: {
       all: {
         options: {
-          jscs: 'Google'
+          'preset': 'google'
         },
-        src: ['Gruntfile.js', 'lib/**/*.js', 'test/**/*.js', 'index.js']
+        files: {
+          src: ['Gruntfile.js', 'index.js', 'lib/randomizer.js', 'lib/reader.js', 'test/randomizer_test.js', 'test/reader_test.js']
+        }
       }
     }
   });
 
-  grunt.registerTask('test', ['jshint:dev', 'simplemocha:all', 'jscs:all']);
+  grunt.registerTask('test', ['jshint', 'simplemocha', 'jscs']);
   grunt.registerTask('default', ['test']);
 };

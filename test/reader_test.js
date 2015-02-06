@@ -6,7 +6,7 @@ var reader = require('../lib/reader');
 var bitmap = fs.readFileSync('test.bmp');
 
 describe('type test', function() {
-  it('should be 100', function() {
+  it('should be BM', function() {
     expect(reader(bitmap).type).to.eql('BM');
   });
 });

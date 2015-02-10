@@ -1,0 +1,27 @@
+{
+  "name": "bitmap_reader",
+  "version": "0.1.0",
+  "description": "bitmap reader and randomizer",
+  "main": "reader.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rraeburn/bitmap_reader.git"
+  },
+  "author": "Ryan Raeburn <ryanraeburn@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rraeburn/bitmap_reader/issues"
+  },
+  "homepage": "https://github.com/rraeburn/bitmap_reader",
+  "devDependencies": {
+    "chai": "^1.10.0",
+    "grunt": "^0.4.5",
+    "grunt-cli": "^0.1.13",
+    "grunt-contrib-jscs": "^0.1.8",
+    "grunt-contrib-jshint": "^0.11.0",
+    "grunt-simple-mocha": "^0.4.0"
+  }
+}
